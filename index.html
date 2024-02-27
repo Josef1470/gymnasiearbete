@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/background.css">
+    <title>GYA</title>
+</head>
+<body>
+
+    <div class="background">
+        <div class="orb" id="orb1"></div>
+        <div class="orb" id="orb2"></div>
+        <div class="orb" id="orb3"></div>
+        <div class="orb" id="orb4"></div>
+        <div class="orb" id="orb5"></div>
+        <div class="orb" id="orb6"></div>
+    </div>
+
+
+    <header>
+        
+    </header>
+
+
+
+    <main>
+        <div id="SL-container">
+            <div id="form">
+
+                <div>
+                <h1>
+                    SL avgångstid &#40;Buss, tåg m.m&#41;
+                </h1>
+                </div>
+
+                <!-- VÄLJA STATION -->
+                <div>
+                <form id="SL-form">
+                    <label for="stationer-choose">Välj en station för att se avgångar för:</label>
+                    <select name="choose" id="stationer-choose">
+                        <option value="7000" id="siteID2">Flemingsberg Station</option>
+                        <option value="Huddinge Sjukhus">Huddinge Sjukhus</option>
+                    </select>
+                    <button type="submit">Visa</button>
+                    
+
+                    <br>
+
+                    <!-- SÖKA STATION -->
+                    <label>Eller sök upp en station med stationens id:</label>
+                    <input type="text" id="siteID">
+                    <button type="submit">Visa</button>
+                </form>
+                </div>
+            </div>
+
+            <div id="Buss-Tag">
+                <div id="buss">
+                    <h1>Buss:</h1>
+
+                    <p id="avgangstider-buss"></p>
+                </div>
+
+                <div id="Tag">
+                    <h1>Tåg:</h1>
+
+                    <p id="avgangstider-tag"></p>
+                </div>
+            </div>
+        </div>    
+            
+    </main>
+
+
+
+    <footer>
+        
+
+    </footer>
+
+    <script src="./js/bus-info.js"></script>
+    <script src="./js/metro-info.js"></script>
+</body>
+</html>

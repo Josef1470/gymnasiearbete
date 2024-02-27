@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* HEADER STYLING */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-image: linear-gradient(to right, purple, pink, purple);
+    height: 10vh;
+    width: auto;
+}
+
+
+
+/* SL DIV's STYLING */
+#SL-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Buss-Tag{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
