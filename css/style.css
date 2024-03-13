@@ -4,6 +4,11 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+html{
+    max-height: 200vh;
+}
+
 /* HEADER STYLING */
 header{
     display: flex;
@@ -11,15 +16,21 @@ header{
     justify-content: space-around;
     align-items: center;
 
-    background-image: linear-gradient(to right, purple, pink, purple);
+    background-color: blue;
     height: 10vh;
     width: auto;
+}
+
+.header-title{
+    color: white;
 }
 
 
 
 /* SL DIV's STYLING */
 #SL-container{
+    height: 90vh;
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -29,10 +40,59 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background-color: #0096FF;
 }
 
 #Buss-Tag{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 5%;
+}
+
+#buss{
+    background-color: #0096FF;
+    border: solid 2px #0096FF;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+#Tag{
+    background-color: #0096FF;
+    border: solid 2px #0096FF;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VÄDER STYLING */
+#vader-container{
+    height: 100vh;
+}
+
+#vader-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: black;
+    height: 10vh;
+    width: auto;
 }

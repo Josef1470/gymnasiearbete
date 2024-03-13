@@ -20,12 +20,13 @@
 
 
     <header>
-        
+        <h1 class="header-title"> SL: Avgångstid för station</h1>
     </header>
 
 
 
     <main>
+        <!-- SL -->
         <div id="SL-container">
             <div id="form">
 
@@ -38,10 +39,11 @@
                 <!-- VÄLJA STATION -->
                 <div>
                 <form id="SL-form">
-                    <label for="stationer-choose">Välj en station för att se avgångar för:</label>
+                    <label for="stationer-choose"><h3>Välj en station för att se avgångar för:</h3></label>
                     <select name="choose" id="stationer-choose">
                         <option value="7000" id="siteID2">Flemingsberg Station</option>
                         <option value="Huddinge Sjukhus">Huddinge Sjukhus</option>
+                        <option value="9283">Fittja</option>
                     </select>
                     <button type="submit">Visa</button>
                     
@@ -49,28 +51,38 @@
                     <br>
 
                     <!-- SÖKA STATION -->
-                    <label>Eller sök upp en station med stationens id:</label>
+                    <label><h3>Eller sök upp en station med stationens id:</h3></label>
                     <input type="text" id="siteID">
                     <button type="submit">Visa</button>
                 </form>
                 </div>
             </div>
 
+            <!-- BUSS INFORMATION -->
             <div id="Buss-Tag">
                 <div id="buss">
                     <h1>Buss:</h1>
 
-                    <p id="avgangstider-buss"></p>
+                    <h3 id="avgangstider-buss"></h3>
                 </div>
 
+                <!-- TÅG INFORMATION -->
                 <div id="Tag">
                     <h1>Tåg:</h1>
 
-                    <p id="avgangstider-tag"></p>
+                    <h3 id="avgangstider-tag"></h3>
                 </div>
             </div>
         </div>    
             
+
+
+        <div id="vader-container">
+            <div id="vader-header">
+                <h1 class="header-title">Här kan du kolla vädret där du befinner dig!</h1>
+            </div>
+        </div>
+
     </main>
 
 
