@@ -12,11 +12,12 @@
 
 .orb {
   position: absolute;
-  width: 50px;
-  height: 50px;
-  background-image: linear-gradient(to top, blue, #0096FF); 
-  border-radius: 50%;
-  animation: moveOrb 5s linear infinite; 
+  width: 75px;
+  height: 75px;
+  background-image: url(../img/buss.jfif); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: moveOrb 7.5s linear infinite; 
 }
 
 

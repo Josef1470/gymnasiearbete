@@ -8,17 +8,6 @@
     <title>GYA</title>
 </head>
 <body>
-
-    <div class="background">
-        <div class="orb" id="orb1"></div>
-        <div class="orb" id="orb2"></div>
-        <div class="orb" id="orb3"></div>
-        <div class="orb" id="orb4"></div>
-        <div class="orb" id="orb5"></div>
-        <div class="orb" id="orb6"></div>
-    </div>
-
-
     <header>
         <h1 class="header-title"> SL: Avgångstid för station</h1>
     </header>
@@ -32,7 +21,7 @@
 
                 <div>
                 <h1>
-                    SL avgångstid &#40;Buss, tåg m.m&#41;
+                    SL avgångstid &#40;Buss, Tåg&#41;
                 </h1>
                 </div>
 
@@ -40,20 +29,48 @@
                 <div>
                 <form id="SL-form">
                     <label for="stationer-choose"><h3>Välj en station för att se avgångar för:</h3></label>
-                    <select name="choose" id="stationer-choose">
-                        <option value="7000" id="siteID2">Flemingsberg Station</option>
-                        <option value="Huddinge Sjukhus">Huddinge Sjukhus</option>
-                        <option value="9283">Fittja</option>
+                    <select name="choose" id="siteID2">
+                        <optgroup label="Gröna linje">
+                            <option value="5501">Hässelby Strand</option>
+                            <option value="5502">Hässelby Gård</option>
+                            <option value="5503">Johannelund</option>
+                            <option value="5504">Vällingby</option>
+                            <option value="5505">Råcksta</option>
+                            <option value="5506">Blackeberg</option>
+                            <option value="5507">Islandstorget</option>
+                            <option value="5508">Ängbyplan</option>
+                            <option value="5509">Ängbybadet</option>
+                            <option value="5510">Stora Mossen</option>
+                            <option value="5511">Abrahamsberg</option>
+                            <option value="5512">Brommaplan</option>
+                            <option value="5513">Åkeshov</option>
+                            <option value="5514">Alvik</option>
+                            <option value="5515">Kristineberg</option>
+                            <option value="5516">Thorildsplan</option>
+                            <option value="5500">Fridhemsplan</option>
+                            <option value="5000">T-Centralen</option>
+                            <option value="5001">Gamla stan</option>
+                            <option value="5002">Slussen</option>
+                            <option value="5003">Medborgarplatsen</option>
+                            <option value="5004">Skanstull</option>
+                            <option value="5005">Gullmarsplan</option>
+                            <option value="5006">Skärmarbrink</option>
+                            <option value="5007">Hammarbyhöjden</option>
+                            <option value="5008">Björkhagen</option>
+                            <option value="5009">Sandsborg</option>
+                            <option value="5010">Skogskyrkogården</option>
+                            <option value="5011">Tallkrogen</option>
+                            <option value="5012">Gubbängen</option>
+                            <option value="5013">Hökarängen</option>
+                            <option value="5014">Farsta</option>
+                            <option value="5015">Farsta strand</option>
+                      </optgroup>
                     </select>
-                    <button type="submit">Visa</button>
-                    
-
-                    <br>
+                    <button type="submit" id="sl-submit">Visa avgångar</button>
+                
 
                     <!-- SÖKA STATION -->
-                    <label><h3>Eller sök upp en station med stationens id:</h3></label>
-                    <input type="text" id="siteID">
-                    <button type="submit">Visa</button>
+                    
                 </form>
                 </div>
             </div>
@@ -77,13 +94,48 @@
             
 
 
+
+
+
+
+
+
+
+
+
+        <!-- VÄDER -->
+
         <div id="vader-container">
             <div id="vader-header">
-                <h1 class="header-title">Här kan du kolla vädret där du befinner dig!</h1>
-            </div>
-        </div>
+                
+                <h1 id="header-title-vader">Här kan du kolla vädret där du befinner dig!</h1>
 
+                <form action="#" id="vader-form">
+                    <label for="text"><h1>Skriv in stad eller ort för att få väder information: </h1></label>
+                    <input type="text" placeholder="Ex. Huddinge" id="vader-place-search">
+                    <button type="submit" id="vader-submit">Visa information</button>
+                </form>
+                
+            </div>
+
+            <div id="vader-info-container">
+                <div id="temp-info">
+                    <h1 id="city"></h1>
+                    <h1 id="temp"></h1>
+                    <h1 id="feels-like"></h1>
+                    <h1 id="max-temp"></h1>
+                    <h1 id="min-temp"></h1>
+                </div>
+            </div>
+            </div>
+
+            
     </main>
+
+
+
+
+
 
 
 
@@ -94,5 +146,6 @@
 
     <script src="./js/bus-info.js"></script>
     <script src="./js/metro-info.js"></script>
+    <script src="./js/weather-info.js"></script>
 </body>
 </html>

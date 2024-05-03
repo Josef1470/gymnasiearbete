@@ -1,11 +1,10 @@
 document.getElementById("SL-form").addEventListener("submit", function(){
     event.preventDefault();
 
-    var siteID = document.getElementById("siteID").value;
     var siteID2 = document.getElementById("siteID2").value;
 
 
-    var URL_change = "https://cors-anywhere.herokuapp.com/https://api.sl.se/api2/realtimedeparturesV4.json?key=6910d12798ae4f9b89648ca8d508e93a&siteid=1002&timewindow=60";
+    var URL_change = "https://cors-anywhere.herokuapp.com/https://api.sl.se/api2/realtimedeparturesV4.json?key=6910d12798ae4f9b89648ca8d508e93a&siteid=" + siteID2 + "&timewindow=60";
 
 
 fetch(URL_change)
