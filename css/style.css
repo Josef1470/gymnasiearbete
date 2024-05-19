@@ -183,7 +183,7 @@ select{
 }
 
 #temp-info{
-    border: white solid 2px;
+    border: none solid 2px;
     border-radius: 25px;
     padding: 10px;
     height: 60vh;
